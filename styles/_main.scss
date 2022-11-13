@@ -1,0 +1,167 @@
+.wrapper {
+    @include setWrapper(88%, 0 auto 50px, 0);
+    @media screen and (min-width: $desk) {
+        @include setWrapper(68%, 0 auto 50px, 0);
+    }
+
+    .inner {
+        @media screen and (min-width: $desk) {
+            @include flex(flex, row, space-between, center, nowrap);
+        }
+
+        .heading {
+            @include setWrapper(auto, 0 auto, 0);
+            @media screen and (min-width: $desk) {
+                @include setWrapper(40%, 0, 0);
+            }
+
+            .title {
+                @include setWrapper(60%, 0 auto, 10px 0);
+                @include setFont(2rem, 700, 1);
+                color: $veryDarkMagenta;
+                text-align: center;
+
+                @media screen and (min-width: $desk) {
+                    @include setWrapper(80%, 0, 10px 0);
+                    @include setFont(3.2rem, 700, 0.8);
+                    text-align: start;
+                }
+            }
+            .subtitle {
+                @include setWrapper(auto, 0 auto, 10px 0);
+                @include setFont(1.2rem, 400, 1.5);
+                color: $darkGrayishMagenta;
+                text-align: center;
+
+                @media screen and (min-width: $desk) {
+                    text-align: start;
+                }
+            }
+        }
+
+        .section {
+            @include setWrapper(auto, 0 auto, 0);
+            @media screen and (min-width: $desk) {
+                @include setWrapper(45%, 0, 0);
+            }
+
+            .section__item {
+                @include setWrapper(auto, 0 auto, 20px 0);
+                @media screen and (min-width: $desk) {
+                    @include flex(flex, row, start, center, nowrap);
+                    @include setWrapper(100%, 45px 0, 0);
+                    column-gap: 5%;
+                }
+
+                .icon {
+                    @include flex(flex, row, center, center, nowrap);
+                    @include setWrapper(auto, 0 auto, 15px 0);
+                    column-gap: 8px;
+                    @media screen and (min-width: $desk) {
+                        @include setWrapper(auto, 0, 0);
+                    }
+                }
+
+                .icon--secondary {
+                    @media screen and (min-width: $desk) {
+                        @include setWrapper(auto, 0 0 0 8%, 0);
+                    }
+                }
+
+                .icon--additional {
+                    @media screen and (min-width: $desk) {
+                        @include setWrapper(auto, 0 0 0 16%, 0);
+                    }
+                }
+            }
+            .subject {
+                @include setFont(1rem, 700, 1);
+                color: $veryDarkMagenta;
+                text-align: center;
+                @media screen and (min-width: $desk) {
+                    @include setWrapper(auto, 0, 0);
+                }
+            }
+        }
+    }
+
+    .socials {
+        @include setWrapper(auto, 0 auto, 30px 0 0);
+        @media screen and (min-width: $desk) {
+            @include flex(flex, row, start, center, no-repeat);
+            column-gap: 3%;
+        }
+
+        .socials__item {
+            @include setWrapper(auto, 15px auto, 40px 9%);
+            background-color: $veryDarkMagenta;
+            border-radius: 10px;
+            @media screen and (min-width: $desk) {
+                @include setWrapper(32%, 15px 0, 30px 2%);
+                @include flex(flex, column, start, start, no-repeat);
+            }
+
+            .name {
+                @include flex(flex, row, flex-start, center, nowrap);
+                column-gap: 8%;
+
+                .img {
+                    display: block;
+                    width: 12%;
+                    border-radius: 50%;
+                    @media screen and (min-width: $desk) {
+                        width: 24%;
+                    }
+                }
+
+                .info {
+                    @include flex(flex, column, center, flex-start, nowrap);
+                    row-gap: 4px;
+                    @media screen and (min-width: $desk) {
+                        @include setWrapper(auto, 5px 0 0, 0);
+                    }
+
+                    .user {
+                        @include setFont(1rem, 500, 1);
+                        color: $white;
+                    }
+
+                    .status {
+                        @include setFont(1rem, 400, 1);
+                        color: $softPink;
+                    }
+                }
+            }
+
+            .text {
+                @include setWrapper(88%, 20px 0 0, 0);
+                @include setFont(1rem, 400, 1.5);
+                color: $white;
+                @media screen and (min-width: $desk) {
+                    @include setWrapper(auto, 20px 0 0, 0);
+                }
+            }
+        }
+
+        .socials__item--additional {
+            @media screen and (min-width: $desk) {
+                margin-top: 45px;
+            }
+        }
+
+        .socials__item--secondary {
+            @media screen and (min-width: $desk) {
+                margin-top: 90px;
+            }
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}

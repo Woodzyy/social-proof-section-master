@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  font-size: 100%;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+a,
+a:active {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+.wrapper {
+  width: 88%;
+  margin: 0 auto 50px;
+  padding: 0;
+}
+@media screen and (min-width: 450px) {
+  .wrapper {
+    width: 68%;
+    margin: 0 auto 50px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 450px) {
+  .wrapper .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+.wrapper .inner .heading {
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .inner .heading {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+  }
+}
+.wrapper .inner .heading .title {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #502050;
+  text-align: center;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .inner .heading .title {
+    width: 80%;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 0.8;
+    text-align: start;
+  }
+}
+.wrapper .inner .heading .subtitle {
+  width: auto;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #937b92;
+  text-align: center;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .inner .heading .subtitle {
+    text-align: start;
+  }
+}
+.wrapper .inner .section {
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .inner .section {
+    width: 45%;
+    margin: 0;
+    padding: 0;
+  }
+}
+.wrapper .inner .section .section__item {
+  width: auto;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .inner .section .section__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 45px 0;
+    padding: 0;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+  }
+}
+.wrapper .inner .section .section__item .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: auto;
+  margin: 0 auto;
+  padding: 15px 0;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .inner .section .section__item .icon {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 450px) {
+  .wrapper .inner .section .section__item .icon--secondary {
+    width: auto;
+    margin: 0 0 0 8%;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 450px) {
+  .wrapper .inner .section .section__item .icon--additional {
+    width: auto;
+    margin: 0 0 0 16%;
+    padding: 0;
+  }
+}
+.wrapper .inner .section .subject {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #502050;
+  text-align: center;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .inner .section .subject {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+.wrapper .socials {
+  width: auto;
+  margin: 0 auto;
+  padding: 30px 0 0;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: no-repeat;
+    -moz-column-gap: 3%;
+         column-gap: 3%;
+  }
+}
+.wrapper .socials .socials__item {
+  width: auto;
+  margin: 15px auto;
+  padding: 40px 9%;
+  background-color: #502050;
+  border-radius: 10px;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .socials .socials__item {
+    width: 32%;
+    margin: 15px 0;
+    padding: 30px 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: no-repeat;
+  }
+}
+.wrapper .socials .socials__item .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  -moz-column-gap: 8%;
+       column-gap: 8%;
+}
+.wrapper .socials .socials__item .name .img {
+  display: block;
+  width: 12%;
+  border-radius: 50%;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .socials .socials__item .name .img {
+    width: 24%;
+  }
+}
+.wrapper .socials .socials__item .name .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  row-gap: 4px;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .socials .socials__item .name .info {
+    width: auto;
+    margin: 5px 0 0;
+    padding: 0;
+  }
+}
+.wrapper .socials .socials__item .name .info .user {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #ffffff;
+}
+.wrapper .socials .socials__item .name .info .status {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #ee68a4;
+}
+.wrapper .socials .socials__item .text {
+  width: 88%;
+  margin: 20px 0 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .socials .socials__item .text {
+    width: auto;
+    margin: 20px 0 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 450px) {
+  .wrapper .socials .socials__item--additional {
+    margin-top: 45px;
+  }
+}
+@media screen and (min-width: 450px) {
+  .wrapper .socials .socials__item--secondary {
+    margin-top: 90px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+body {
+  background-color: #f7f2f7;
+  font-family: "League Spartan", sans-serif;
+  padding: 60px 0 20px;
+}
+@media screen and (min-width: 450px) {
+  body {
+    padding: 80px 0 20px;
+  }
+}

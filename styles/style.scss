@@ -1,0 +1,14 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+@import "variables";
+@import "mixin";
+@import "main";
+
+body {
+    background-color: $lightGrayishMagenta;
+    font-family: "League Spartan", sans-serif;
+    padding: 60px 0 20px;
+    @media screen and (min-width: $desk) {
+        padding: 80px 0 20px;
+    }
+}
